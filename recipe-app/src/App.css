@@ -1,0 +1,14 @@
+.inputForm {
+    max-width: 210px;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 50px;
+}
