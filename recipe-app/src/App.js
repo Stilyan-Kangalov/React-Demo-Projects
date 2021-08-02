@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Resipes from './Recipe';
+import { ReactComponent as SearchIcon } from './search.svg';
 import './App.css';
 
 const App = () => {
@@ -27,10 +28,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="pt-2 relative mx-auto text-gray-600 inputForm">
+      <div className="pt-2 mt-4 relative mx-auto text-gray-600 inputForm">
         <input type="search" name="serch" placeholder="Search" className="bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none" ref={valueRef} /> 
         <button type="submit" className="absolute right-0 top-0 mt-5 mr-4" onClick={handleClick}>
-          <i className="text-gray-600 h-4 w-4 fill-current">&#128269;</i>
+          
+          <SearchIcon className="text-gray-600 h-4 w-4 fill-current" />
         </button>
       </div>
       <div className="recipes">
